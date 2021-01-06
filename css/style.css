@@ -1,0 +1,52 @@
+*{
+  margin:0;
+  padding:0;
+  font-family:sans-serif;
+}
+
+body{
+  background-color:#353b48;
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.btn{
+  width:200px;
+  height:60px;
+  background:none;
+  border:4px solid;
+  color:#3498db;
+  font-weight:700;
+  text-transform:uppercase;
+  cursor:pointer;
+  font-size:16px;
+}
+
+.btn::before,.btn::after{
+  content:'';
+  position:absolute;
+  width:14px;
+  height:6px;
+  background-color:#353b48;
+  transform:skewX(50deg);
+  transition: .4s linear;
+}
+
+.btn::before{
+  top: 348px;
+  left: 720px;
+}
+.btn::after{
+  top:405px;
+  left:870px;
+}
+
+.btn:hover::before{
+  left:870px;
+  
+}
+.btn:hover::after{
+  left:720px;
+}
